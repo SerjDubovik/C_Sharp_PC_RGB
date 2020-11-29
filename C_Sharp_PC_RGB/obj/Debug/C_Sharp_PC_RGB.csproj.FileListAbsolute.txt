@@ -7,3 +7,4 @@ D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csproj.Gene
 D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csproj.CoreCompileInputs.cache
 D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.exe
 D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.pdb
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.Form1.resources

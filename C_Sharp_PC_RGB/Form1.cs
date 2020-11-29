@@ -15,6 +15,16 @@ namespace C_Sharp_PC_RGB
         public Form1()
         {
             InitializeComponent();
+            colorDialog1.FullOpen = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+
+            
+        }
+
+
     }
 }
