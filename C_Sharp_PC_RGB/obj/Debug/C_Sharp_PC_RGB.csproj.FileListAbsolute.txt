@@ -1,0 +1,9 @@
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\bin\Debug\C_Sharp_PC_RGB.exe.config
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\bin\Debug\C_Sharp_PC_RGB.exe
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\bin\Debug\C_Sharp_PC_RGB.pdb
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csprojAssemblyReference.cache
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.Properties.Resources.resources
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csproj.GenerateResource.cache
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csproj.CoreCompileInputs.cache
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.exe
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.pdb
