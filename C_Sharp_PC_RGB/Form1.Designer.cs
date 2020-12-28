@@ -55,16 +55,25 @@
             this.numericUpDown_R = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_G = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_B = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
             this.Main_menu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_R)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_G)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(684, 379);
+            this.button1.Location = new System.Drawing.Point(316, 178);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 32);
             this.button1.TabIndex = 0;
@@ -80,7 +89,7 @@
             this.ToolStripMenuItem_Help});
             this.Main_menu.Location = new System.Drawing.Point(0, 0);
             this.Main_menu.Name = "Main_menu";
-            this.Main_menu.Size = new System.Drawing.Size(800, 24);
+            this.Main_menu.Size = new System.Drawing.Size(436, 24);
             this.Main_menu.TabIndex = 7;
             this.Main_menu.Text = "menuStrip1";
             // 
@@ -152,9 +161,9 @@
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel6,
             this.toolStripStatusLabel7});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 235);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(436, 22);
             this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -209,7 +218,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 94);
+            this.label1.Location = new System.Drawing.Point(19, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 12;
@@ -218,7 +227,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(92, 135);
+            this.label2.Location = new System.Drawing.Point(19, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(15, 13);
             this.label2.TabIndex = 13;
@@ -227,7 +236,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(92, 178);
+            this.label3.Location = new System.Drawing.Point(19, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(14, 13);
             this.label3.TabIndex = 14;
@@ -235,7 +244,7 @@
             // 
             // numericUpDown_R
             // 
-            this.numericUpDown_R.Location = new System.Drawing.Point(122, 90);
+            this.numericUpDown_R.Location = new System.Drawing.Point(49, 42);
             this.numericUpDown_R.Maximum = new decimal(new int[] {
             4500,
             0,
@@ -248,7 +257,7 @@
             // 
             // numericUpDown_G
             // 
-            this.numericUpDown_G.Location = new System.Drawing.Point(122, 133);
+            this.numericUpDown_G.Location = new System.Drawing.Point(49, 85);
             this.numericUpDown_G.Maximum = new decimal(new int[] {
             4500,
             0,
@@ -261,7 +270,7 @@
             // 
             // numericUpDown_B
             // 
-            this.numericUpDown_B.Location = new System.Drawing.Point(122, 175);
+            this.numericUpDown_B.Location = new System.Drawing.Point(49, 127);
             this.numericUpDown_B.Maximum = new decimal(new int[] {
             4500,
             0,
@@ -272,11 +281,74 @@
             this.numericUpDown_B.TabIndex = 88;
             this.numericUpDown_B.ValueChanged += new System.EventHandler(this.numericUpDown_B_ValueChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(135, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "NuN";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(135, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 13);
+            this.label5.TabIndex = 90;
+            this.label5.Text = "NuN";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(135, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 91;
+            this.label6.Text = "NuN";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.LargeChange = 1;
+            this.trackBar1.Location = new System.Drawing.Point(180, 42);
+            this.trackBar1.Maximum = 4500;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(237, 45);
+            this.trackBar1.TabIndex = 92;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.LargeChange = 1;
+            this.trackBar2.Location = new System.Drawing.Point(180, 85);
+            this.trackBar2.Maximum = 4500;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(237, 45);
+            this.trackBar2.TabIndex = 93;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.LargeChange = 1;
+            this.trackBar3.Location = new System.Drawing.Point(180, 127);
+            this.trackBar3.Maximum = 4500;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(237, 45);
+            this.trackBar3.TabIndex = 94;
+            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(436, 257);
+            this.Controls.Add(this.trackBar3);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.numericUpDown_B);
             this.Controls.Add(this.numericUpDown_G);
             this.Controls.Add(this.numericUpDown_R);
@@ -296,6 +368,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_R)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_G)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,6 +404,12 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_R;
         private System.Windows.Forms.NumericUpDown numericUpDown_G;
         private System.Windows.Forms.NumericUpDown numericUpDown_B;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar3;
     }
 }
 

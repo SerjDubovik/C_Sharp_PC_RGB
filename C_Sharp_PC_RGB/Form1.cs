@@ -68,6 +68,10 @@ namespace C_Sharp_PC_RGB
 
 			existing_port_list.AddRange(SerialPort.GetPortNames());                     // узнаём какие порты активны сейчс и заносим их в лист
 
+			label4.Text = "0";
+			label5.Text = "0";
+			label6.Text = "0";
+
 		}
 
 
@@ -75,8 +79,33 @@ namespace C_Sharp_PC_RGB
 
         private void button1_Click(object sender, EventArgs e)      // кнопка вызова диаграммы выбора цвета
         {
-            colorDialog1.ShowDialog();            
-        }
+			//colorDialog1.ShowDialog(); 
+
+			if (colorDialog1.ShowDialog() == DialogResult.Cancel)
+				return;
+
+			label4.Text = colorDialog1.Color.R.ToString();
+			label5.Text = colorDialog1.Color.G.ToString();
+			label6.Text = colorDialog1.Color.B.ToString();
+
+			ushort R = Convert.ToUInt16((((colorDialog1.Color.R * 100) / 255) * 4500) /100);
+			ushort G = Convert.ToUInt16((((colorDialog1.Color.G * 100) / 255) * 4500) / 100);
+			ushort B = Convert.ToUInt16((((colorDialog1.Color.B * 100) / 255) * 4500) / 100);
+
+			modBus_var.mb_mass[3] = R;
+			trackBar1.Value = Convert.ToInt16(R);
+			numericUpDown_R.Value = Convert.ToInt16(R);
+
+			modBus_var.mb_mass[2] = G;
+			trackBar2.Value = Convert.ToInt16(G);
+			numericUpDown_G.Value = Convert.ToInt16(G);
+
+			modBus_var.mb_mass[1] = B;
+			trackBar3.Value = Convert.ToInt16(B);
+			numericUpDown_B.Value = Convert.ToInt16(B);
+
+
+		}
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -100,24 +129,45 @@ namespace C_Sharp_PC_RGB
         private void timer_for_Displ_Tick(object sender, EventArgs e)
         {
             toolStripStatusLabel7.Text = Convert.ToString(modBus_var.mb_mass[8]);       // тестовый счётчик в потоке модбаса в плате. в строке состояния.
-        }
+
+		}
 
 
 
 
         private void numericUpDown_R_ValueChanged(object sender, EventArgs e)			// R
         {
-			modBus_var.mb_mass[3] = Convert.ToUInt16(numericUpDown_R.Value); 
+			modBus_var.mb_mass[3] = Convert.ToUInt16(numericUpDown_R.Value);
+			trackBar1.Value = Convert.ToInt16(numericUpDown_R.Value);
 		}
 
         private void numericUpDown_G_ValueChanged(object sender, EventArgs e)			// G
         {
 			modBus_var.mb_mass[2] = Convert.ToUInt16(numericUpDown_G.Value);
+			trackBar2.Value = Convert.ToInt16(numericUpDown_G.Value);
 		}
 
         private void numericUpDown_B_ValueChanged(object sender, EventArgs e)			// B
         {
 			modBus_var.mb_mass[1] = Convert.ToUInt16(numericUpDown_B.Value);
+			trackBar3.Value = Convert.ToInt16(numericUpDown_B.Value);
+		}
+
+
+
+        private void trackBar1_Scroll(object sender, EventArgs e)						// R
+        {
+			numericUpDown_R.Value = trackBar1.Value;
+		}
+
+        private void trackBar2_Scroll(object sender, EventArgs e)						// G
+        {
+			numericUpDown_G.Value = trackBar2.Value;
+		}
+
+        private void trackBar3_Scroll(object sender, EventArgs e)						// B
+        {
+			numericUpDown_B.Value = trackBar3.Value;
 		}
     }
 
