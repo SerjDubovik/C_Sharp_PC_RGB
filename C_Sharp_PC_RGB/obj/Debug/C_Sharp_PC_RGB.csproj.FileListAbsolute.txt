@@ -8,3 +8,6 @@ D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csproj.Core
 D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.exe
 D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.pdb
 D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.Form1.resources
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\bin\Debug\log4net.dll
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\bin\Debug\nmodbuspc.dll
+D:\GIT\GitHub\C_Sharp_PC_RGB\C_Sharp_PC_RGB\obj\Debug\C_Sharp_PC_RGB.csproj.CopyComplete
