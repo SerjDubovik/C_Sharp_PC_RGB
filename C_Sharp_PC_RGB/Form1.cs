@@ -72,6 +72,10 @@ namespace C_Sharp_PC_RGB
 			label5.Text = "0";
 			label6.Text = "0";
 
+			label7.Text = "0";
+			label8.Text = "0";
+			label9.Text = "0";
+
 		}
 
 
@@ -129,6 +133,10 @@ namespace C_Sharp_PC_RGB
         private void timer_for_Displ_Tick(object sender, EventArgs e)
         {
             toolStripStatusLabel7.Text = Convert.ToString(modBus_var.mb_mass[8]);       // тестовый счётчик в потоке модбаса в плате. в строке состояния.
+
+			label7.Text = Convert.ToString(modBus_var.mb_mass[9] / 10.0f); 
+			label8.Text = Convert.ToString(modBus_var.mb_mass[10] / 10.0f); 
+			label9.Text = Convert.ToString(modBus_var.mb_mass[11] / 10.0f); 
 
 		}
 

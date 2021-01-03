@@ -105,6 +105,15 @@ namespace C_Sharp_PC_RGB
 					master.WriteSingleRegister(modBus_var.adrr_dev_in, 2, modBus_var.mb_mass[2]);
 					master.WriteSingleRegister(modBus_var.adrr_dev_in, 3, modBus_var.mb_mass[3]);
 
+					register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 9, 2);           // датчик температуры на плате
+					modBus_var.mb_mass[9] = register[0];
+
+					register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 10, 2);           // выносной датчик температуры 1
+					modBus_var.mb_mass[10] = register[0];
+
+					register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 11, 2);           // выносной датчик температуры 2
+					modBus_var.mb_mass[11] = register[0];
+
 				}
 
 				catch 
